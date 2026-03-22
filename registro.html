@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title>Registro - Mochileros por el mundo</title> <!--Título de la página (aparece en la pestaña del buscador)-->
+        <link rel="stylesheet" href="styles/styles.css"> <!--Documento de CSS que estamos utilizando-->
+        <link rel="icon" type="image/png" href="images/Logosimple.png"> <!--Logo simplificado (aparece en la pestaña del buscador)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para implementar que la página sea responsive-->
+
+    </head>
+    <body>
+        <!--Cabecera de la página web, título, barra de navegación, logo y selector de idioma-->
+        <header class="cabecera">
+            <p class = "titulo">Mochileros por el mundo</p>
+            <nav>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Inicio</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Experiencias</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Consejos</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Foro</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Contacto</a>
+            </nav>
+            <aside class="elementos_juntos">
+                <img src="images/Mochileroslogo.png" width="70" height="70" alt="Logo de mochileros por el mundo">
+            
+                <select class="idioma" name="idioma">
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+                <option value="GE">GE</option>
+                </select>
+            </aside>
+        </header>
+        <!--Cuerpo principal de la página web, incluye un formulario de registro con diversos campos a rellenar-->
+        <main id="main_registro">
+            <form id="cuadricula_registro">
+                <h2>Registro de nuevos usuarios</h2>
+                <div id="error_registro"></div>
+                <input type="text" id="nombre" class="campos-form" name="nombre" placeholder="Nombre" >
+                <input type="text" id="apellidos" class="campos-form" name="apellidos" placeholder="Apellidos" >
+                <input type="email" id="correo_electronico" class="campos-form" name="correo_electronico" placeholder="Correo electrónico" >
+                <input type="email" id="confirmar_correo" class="campos-form" name="confirmar_correo" placeholder="Confirmar correo" >
+
+                <label for="birthday" class="texto_label">Fecha de nacimiento: </label>
+                <input type="date" class="campos-form" id="birthday" name="birthday">
+
+                <input type="text" id="usuario" class="campos-form" name="usuario" placeholder="Login" >
+                <input type="password" id="contraseña" class="campos-form" name="contraseña" placeholder="Contraseña.." >
+
+                <label for="img_perfil" class="texto_label">Subir imagen de perfil:</label>
+                <label for="img_perfil" id="boton_personalizado">Examinar...</label> <!--nuestro querido amigo chatgpt lo hizo, pido perdon-->
+                <input type="file" id="img_perfil" name="img_perfil"><br>
+                
+                <div id="privacidad">
+                        <input type="checkbox" name="privacidad" value="acepta" id="ack_privacidad" >
+                        <label for="ack_privacidad">Acepto la <a href="politicadeprivacidad.com">Política de privacidad</a></label><br>
+                </div><br>
+                <button id="boton_submit" type="submit">Guardar datos y acceder</button>
+                </form>
+        </main>
+        <!--Footer de la página web, incluye el aviso de copyright, un bloque de navegación, botones para enlazar redes sociales y un pequeño formulario para la newsletter-->
+        <footer class="fin">
+            <p>@ 2025 Mochileros por el mundo</p>
+            <nav class="navegacion_footer">
+                <a href="No_funcional_:D" class= "navegacion_cabecera_footer">Sobre nosotros</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Política de privacidad</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Ayuda</a>
+            </nav>
+            
+            <aside class="footer_aside">
+
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/instaram.png" width="70" height="70" alt="Icono de instagram"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/tiktok.png" width="70" height="70" alt="Icono de tiktok"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/twitter.png" width="70" height="70" alt="Icono de twitter"></button>
+            
+                <form class="newsletter">
+                    <input type="email" class="email" name="email" placeholder="email..">
+
+                    <aside class="botones-newsletter">
+                        <input type="submit" class="newsletter-submit" value="Suscribirse a newsletter">
+                    </aside>
+                    
+
+                </form>
+            </aside>
+        </footer>
+
+        <script src="scripts/registro.js"></script>
+    </body>
+</html>

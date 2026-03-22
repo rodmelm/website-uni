@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title>Mochileros por el mundo</title> <!--Título de la página (aparece en la pestaña del buscador)-->
+        <link rel="stylesheet" href="styles/styles.css"> <!--Documento de CSS que estamos utilizando-->
+        <link rel="icon" type="image/png" href="images/Logosimple.png"> <!--Logo simplificado (aparece en la pestaña del buscador)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para implementar que la página sea responsive-->
+    </head>
+    <body>
+        <!--Cabecera de la página web, título, barra de navegación, logo y selector de idioma-->
+        <header class="cabecera"> 
+            <p class = "titulo">Mochileros por el mundo</p>
+            <nav>
+                <a href="No_funcional_:D" class="navegacion_cabecera_footer">Inicio</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Experiencias</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Consejos</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Foro</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Contacto</a>
+            </nav>
+            <aside class="elementos_juntos">
+                <img src="images/Mochileroslogo.png" width="70" height="70" alt="Logo de mochileros por el mundo">
+            
+                <select class="idioma" name="idioma">
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+                <option value="GE">GE</option>
+                </select>
+            </aside>
+        </header>
+        <!--Cuerpo principal de la página web, dividido en la parte izquierda y la parte derecha-->
+        <main class="cuadricula_principal">
+            <div class="cuadricula_izq"> <!--Cuadrícula izquierda dividida a su vez en bloque superior e inferior-->
+
+                <div class="bloque_arriba"> <!--Bloque superor incluye banner y carrusel de imágenes-->
+
+                    <aside class="banner">
+                        <p>Naturaleza al máximo</p>
+                    </aside>
+                    
+                    <button type="button" class="carrusel-btn prev">◄</button> <!--Botón izquierdo del carrusel-->
+
+                    <aside class="container">
+
+                        <div class="carrusel-track">
+                            <div class="carrusel-item first">
+                                <div class="segmento_cont">
+                                    <p>Ruta del Horizonte</p>
+                                    <p>Un viaje por los Pirineos</p>
+                                </div>
+                                <div class="segmento_cont">
+                                    <p>600€</p>
+                                </div>
+                                <div class="compra">
+                                    <button class="compra compra-slide1">Compra</button>
+                                </div>
+                            </div>
+
+                            <div class="carrusel-item second">
+                                <div class="segmento_cont">
+                                    <p>Ruta del Acantilado</p>
+                                    <p>Las mejores vistas</p>
+                                </div>
+                                <div class="segmento_cont">
+                                    <p>800€</p>
+                                </div>
+                                <div class="compra">
+                                    <button class="compra compra-slide2">Compra</button>
+                                </div>
+                            </div>
+
+                            <div class="carrusel-item third">
+                                <div class="segmento_cont">
+                                    <p>Ruta del Monte Nevado</p>
+                                    <p>Un paisaje helado</p>
+                                </div>
+                                <div class="segmento_cont">
+                                    <p>1.000€</p>
+                                </div>
+                                <div class="compra">
+                                    <button class="compra compra-slide3">Compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <button type="button" class="carrusel-btn next">►</button> <!--Botón derecho del carrusel-->
+                </div>
+
+                <section class="bloque_abajo"> <!--Bloque inferior incluye las experiencias de la página-->
+                    <h3>Experiencias</h3>
+                    <div class="cuadricula_abajo">
+                        <aside>
+                            <p class="titulo-imagen">Ushuaia (Argentina)</p>
+                            <img class="viaje" src="images/Ushuaia.jpg" alt="Foto de Ushuaia (Argentina)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                        <aside>
+                            <p class="titulo-imagen">Calgary (Canadá)</p>
+                            <img class="viaje" src="images/Canadá.jpeg" alt="Foto de Calgary (Canadá)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                        <aside>
+                            <p class="titulo-imagen">Osaka (Japón)</p>
+                            <img class="viaje" src="images/Japón.jpg" alt="Foto de Osaka (Japón)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                        <aside>
+                            <p class="titulo-imagen">Cochem (Alemania)</p>
+                            <img class="viaje" src="images/Alemania.png" alt="Foto de Cochem (Alemania)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                        <aside>
+                            <p class="titulo-imagen">Islas Lofoten (Noruega)</p>
+                            <img class="viaje" src="images/Noruega.jpg" alt="Foto de las Islas Lofoten (Noruega)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                        <aside>
+                            <p class="titulo-imagen">Valle del Rift (Kenia)</p>
+                            <img class="viaje" src="images/kenia.jpg" alt="Foto del Valle del Rift (Kenia)">
+                            <button class="like" type="button" onclick="document.location='registro.html'"><img src="images/corazon.png" alt="corazon vacio"></button>
+                            <button class="ver-mas" type="button" onclick="document.location='registro.html'">Ver más</button>
+
+                        </aside>
+                    </div>
+                </section>
+
+            </div>
+            <aside class="lateral"> <!--Contenido relacionado de la página dividida en formulario de identificación y tres bloques de navegación-->
+                <div id="error_index"></div>
+                <form class="identificacion">
+                    <input type="text" id="usuario_inicio_sesion" class="campos-form" name="usuario" placeholder="Usuario..">
+                    <input type="password" id="contraseña_inicio_sesion" class="campos-form" name="contraseña" placeholder="Contraseña..">
+
+                    <div id="recordar">
+                        <input type="checkbox" id="r-contraseña" name="recordar" value="recordada">
+                        <label for="r-contraseña">Recordar contraseña</label><br>
+                    </div>
+                    
+                    <div class="confirmar-registro">
+                        <input type="button" id="inicio_sesion" value="Iniciar sesión" class="botones-reg">
+                        <input type="button" id="boton_registro" value="Registro" class="botones-reg">
+                    </div>
+                    
+
+                </form>
+
+                <nav>
+                    <h2>Top destinos mochileros</h2>
+                    <ul>
+                        <li><a href="No_funcional_:D" class="navegacion">Noruega</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Japón</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Canadá</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2>Consejos rápidos</h2>
+                    <ul>
+                        <li><a href="No_funcional_:D" class="navegacion">Lleva seguro médico</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Infórmate sobre visados</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Viaje ligero</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h2>Proximos encuentros</h2>
+                    <ul>
+                        <li><a href="No_funcional_:D" class="navegacion">Madrid·8/11</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Alicante·5/12</a></li>
+                        <li><a href="No_funcional_:D" class="navegacion">Barcelona·5/01</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </main>
+
+        <!--Footer de la página web, incluye el aviso de copyright, un bloque de navegación, botones para enlazar redes sociales y un pequeño formulario para la newsletter-->       
+        <footer class="fin"> 
+            <p>@ 2025 Mochileros por el mundo</p>
+            <nav class="navegacion_footer">
+                <a href="No_funcional_:D" class= "navegacion_cabecera_footer">Sobre nosotros</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Política de privacidad</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Ayuda</a>
+            </nav>
+            
+            <aside class="footer_aside">
+
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/instaram.png" width="70" height="70" alt="Icono de instagram"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/tiktok.png" width="70" height="70" alt="Icono de tiktok"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/twitter.png" width="70" height="70" alt="Icono de twitter"></button>
+            
+                <form class="newsletter">
+                    <input type="email" class="email" name="email" placeholder="email..">
+
+                    <aside class="botones-newsletter">
+                        <input type="submit" class="newsletter-submit" value="Suscribirse a newsletter">
+                    </aside>
+                    
+
+                </form>
+            </aside>
+        </footer>
+
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

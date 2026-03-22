@@ -1,0 +1,857 @@
+@font-face {
+    font-family: MyFont;
+    src: url(../images/Rattless.ttf);
+}
+
+@font-face {
+    font-family: Motivo;
+    src: url(../images/JOURNAL.TTF);
+}
+
+/*---------------------LINKS---------------------*/
+.navegacion_cabecera_footer:link {color: white;text-decoration:none;}
+.navegacion_cabecera_footer:hover {text-decoration:underline;}
+.navegacion:link {color: black;text-decoration:none;}
+.navegacion:hover {text-decoration:underline;}
+
+
+/*---------------------CABECERA---------------------*/
+.titulo{
+   font-family: MyFont;
+   font-size: 30px;
+
+   padding-left: 30px;
+   color: white;
+}
+.cabecera *{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-right: 2px;
+}
+
+.idioma {
+    width: 80%;
+    height: 45%;
+    font-size: 25px;
+    border-style: hidden;
+    border-radius:5px;
+    border-width: 2px;
+    
+}
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    border-style: hidden;
+    border-width: 2px;
+    border-radius: 25px;
+    background-color: #188C7C;
+
+    position: sticky;
+    top: 0;
+    margin-top: 5px;
+
+    z-index: 1000;
+}
+
+.elementos_juntos {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*---------------------CUERPO DE PÁGINA---------------------*/
+
+body{
+    background-image: url(../images/naturalezafondo.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}                
+
+.cuadricula_principal{
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    column-gap: 2%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/*---------------------BLOQUE IZQUIERDO---------------------*/
+
+.cuadricula_izq{
+    display: grid;
+    row-gap: 2%;
+    height: 100%;
+    align-content: start;
+}
+
+section{
+    border-style: hidden;
+    border-width: 10px;
+    border-radius: 25px;
+    background-color: rgba(240, 240, 240, 0.35);
+    margin-bottom: 20px;
+}
+
+/*---------------------PARTE SUPERIOR---------------------*/
+
+.bloque_arriba{
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 5% auto 5%;
+    grid-template-rows: 1fr 3fr;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 70vh; 
+}
+
+.banner{
+    display: block;
+    grid-column: 1/span 3;
+    border: hidden;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    background-color: rgba(240, 240, 240, 0.35);
+    background-image: url(../images/Hojas.gif);
+    background-repeat: repeat-x;
+    background-clip: border-box;
+    background-position: center;
+    text-align: center;
+}
+
+.banner p{
+    background-color: rgba(240, 240, 240, 0.35);
+    font-family: Motivo;
+    font-size: 50px;
+    /*font-weight: bold;*/
+    padding: 20px;
+    display: inline-block;
+}
+
+.container {
+    border-radius: 5px;
+    position:relative;
+    overflow: hidden;
+}
+
+.carrusel-track{
+    display:flex;
+    transition: transform 0.5s ease;
+    height: 100%;
+}
+
+.carrusel-item {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+    border-radius: 5px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.first {
+    background-image: url(../images/mochilero.png);
+}
+
+.second {
+    background-image: url(../images/paisaje2.jpg);
+}
+
+.third {
+    background-image: url(../images/paisaje3.jpg);
+}
+
+.container h4 {
+    margin: 5px;
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+    border-style: hidden;
+    align-self: flex-start;
+}
+.segmento_cont{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.segmento_cont p {
+    margin: 5px;    
+    font-size: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+    border-style: hidden;
+}
+button.compra{
+    font-size: 20px;
+    padding: 5px;
+    background-color: aliceblue;
+    border-style: hidden;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    cursor: pointer; 
+}
+div.compra{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+/*---------------------PARTE INFERIOR---------------------*/
+
+.bloque_abajo{
+    margin: 15px;
+}
+
+.cuadricula_abajo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px;
+    padding: 30px;
+}
+
+.bloque_abajo aside{
+    display: grid;
+    border: hidden;
+    padding-top: 10px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: solid;
+    border-right: solid;
+    border-radius: 20px;
+
+}
+
+.bloque_abajo aside p{
+    font-size: 100%;
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+    padding: 5px;
+}
+
+h1 {
+    font-family: Motivo;
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.viaje{
+    height: 98%;
+    width: 98%;
+    grid-area: 2 / 1 / 4 / 2;
+    border-bottom-left-radius: 25px;
+}
+
+.like{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: end;
+    justify-self: center;
+}
+
+.like:hover{
+    background-image: url(../images/corazonrojo.png);
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: end;
+    justify-self: center;
+    background-size: 45% 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like img{
+    height: 45%;
+    width: 45%;
+}
+
+.titulo-imagen{
+    grid-area: 1 / 1 / 2 / 3;
+    font-weight: bold;
+}
+
+.ver-mas{
+    height: auto;
+    width: auto;
+
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 100%;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}                                                          
+
+/*---------------------BLOQUE LATERAL---------------------*/
+
+.lateral {
+    border-style: hidden;
+    border-width: 10px;
+    border-radius: 25px;
+
+    background-color: rgba(240, 240, 240, 0.35);
+}
+
+h2{
+    font-size: 30px;
+    font-weight: lighter;
+    grid-column: 1/span 2;
+    margin: 5%;
+}
+
+
+/*---------------------IDENTIFICACION Y REGISTRO---------------------*/
+
+.identificacion {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+    border-bottom: solid;
+    border-width: 2px;
+    margin: 15px;
+    padding-bottom: 50px;
+}
+
+.campos-form {
+    padding: 10px;
+    margin: 5%;
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+input.botones-reg {
+    width: 45%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 201, 255);
+
+    border: none;
+    cursor: pointer;
+}
+
+#recordar {
+    cursor: pointer;
+    align-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: 3 / 1 / 4 / 3;
+    padding-bottom: 10px;
+}
+
+.confirmar-registro {
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 4 / span 4;
+    grid-column: 1/ span 2;
+
+
+    justify-content: space-around;
+}
+
+input[type=button] {
+    background-color: rgb(0, 201, 255);
+    border-radius: 5px;
+}
+
+button[type=submit] {
+    background-color: rgb(0, 201, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: rgb(87, 100, 255);
+    border-radius: 5px;
+
+}
+
+input[type=button]:hover {
+    background-color: rgb(87, 100, 255);
+    border-radius: 5px;
+
+}
+
+/*---------------------PAGINA DE REGISTRO---------------------*/
+
+input[type=file]{
+    display: none;
+}
+
+#cuadricula_registro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: hidden;
+    background-color: rgba(240, 240, 240, 0.35);
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 30%;
+    padding: 50px;
+    row-gap: 0px;
+}
+
+#main_registro {
+    display: flex;
+    justify-content: center;
+    flex: 1; 
+}
+
+#error_registro {
+    color: darkred;
+    text-align: center;
+    margin-bottom: 10px;
+    grid-column: 1/span 2;
+    align-content: end;
+    word-break: normal;
+}
+
+#error_index {
+    color: darkred;
+    text-align: center;
+    margin-top: 20px;
+    grid-column: 1/span 2;
+    align-content: end;
+}
+
+#error_compra {
+    color: darkred;
+    text-align: center;
+    margin-top: 20px;
+    grid-column: 1/span 2;
+    align-content: end;
+}
+
+.campos-form.error {
+    border-color: darkred;
+    border-width: 2.5px;
+}
+
+.campos-form.error::placeholder {
+    color: darkred;
+    opacity: 1;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button:disabled:hover {
+    background-color: #cccccc;
+}
+
+.texto_label{
+    margin-left: 15%;
+    padding-top: 20px;
+}
+
+#birthday{
+    grid-column: 1/span 2;
+    justify-self: left;
+    margin-left: 16.7px;
+    width: 45%;
+    align-self: center;
+    justify-self: center;
+}
+
+#boton_personalizado {
+    width: 50%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(200, 201, 200);
+    margin-top: 5px;
+
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    grid-column: 1/span 2;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 20px;
+    
+}
+
+#boton_personalizado:hover {
+    background-color: #188C7C;
+}
+
+#privacidad {
+    grid-column: 1/span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#acceso{
+    margin-top: 5%;
+    grid-column: 1/3;
+    justify-self: right;
+    padding: 3px;
+}
+
+/*---------------------PAGINA DE COMPRA---------------------*/
+
+.cuadricula_compra{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    column-gap: 2%;
+    margin: 10px;
+    border-radius: 25px;
+    flex: 1; 
+
+    
+}
+
+.form_compra{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 50px;
+    row-gap: 10px;
+
+    border: hidden;
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    background-color: rgba(240, 240, 240, 0.35);
+    justify-content: center;
+}
+
+.campos_compra{
+    grid-column: 1/3;
+    padding: 10px;
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+#CVV, #caducidad{
+    padding: 10px;
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+
+.form_compra input{
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    padding: 15px;
+}
+
+#tarjeta{
+    height: 35px;
+    border: solid;
+    /*border-style: hidden; chequiar*/ 
+    border-radius:5px;
+    border-width: 2px;
+    margin-left: 10%;
+}
+
+input[type=reset] {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(0, 201, 255);
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type=reset]:hover {
+    background-color: rgb(87, 100, 255);
+
+}
+
+.opciones_compra {
+    margin-top: 20px;
+}
+
+#cuadricula_info{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    row-gap: 2%;
+}
+
+#imagen_paquete {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.descripcion{
+    padding: 5%;
+    font-size: 20px;
+    border-style: hidden;
+    border-radius: 25px;
+    background-color: rgba(240, 240, 240, 0.5);
+    text-align: justify;
+}
+
+/*---------------------PIE DE PÁGINA---------------------*/
+
+.fin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding-left: 20px;
+    background-color: #188C7C;
+}
+
+.navegacion_footer {
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer_aside {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_social{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap:10px;
+    align-content: center;
+    border-left: solid;
+    border-width: 2px;
+    padding-left: 20px;
+}
+
+.newsletter-submit {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(0, 201, 255);
+
+    border: none;
+    cursor: pointer;
+}
+
+.botones-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.email {
+    height: 50px;
+
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+/*---------------------LATERAL VERSION_B---------------------*/
+
+#cerrar_sesion {
+    width: auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.seccion_lateral {
+    padding-bottom: 5%;
+    border-bottom: solid;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    margin: 5%;
+}
+
+#ultima_seccion {
+    padding-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 5%;
+}
+
+.cuadricula_generica{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: hidden;
+    padding: 10px;
+    row-gap: 10px;
+
+}
+
+#enviar_consejo {
+    width: 98%;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(0, 201, 255);
+
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#buscador_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscador {
+    width: 50%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url(../images/lupa.png);
+    background-size: 25px 25px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 45px;
+    transition: width 0.4s ease-in-out;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+#buscador:focus {
+  width: 100%;
+}
+
+#ultima_seccion li{
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#ultima_seccion input[type=text] {
+    width: 90%;
+    margin: 5px;
+    padding: 15px;
+}
+
+#ultima_seccion input[type=button] {
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 50px;
+    border:hidden;
+    cursor: pointer;
+
+}
+
+#calendario {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 0px;
+    border-radius: 0px;
+    margin-top: 30px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#calendario p{
+    border: solid;
+    border-width: 1px;
+    margin: 0px;
+    padding: 5px;
+}
+
+.mes {
+    grid-column: 1 / span 7;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.dia {
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+.dia_semana {
+    background-color: rgba(255, 255, 255, 0.7)
+}
+
+
+.sig_mes {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*---------------------RESPONSIVE---------------------*/
+
+@media only screen and (max-width: 768px) {
+    .lateral {grid-area: 1 / span 2; margin-bottom: 10px;}
+    .cuadricula_izq {grid-area: 2 / span 2;}
+    .cuadricula_abajo{grid-template-columns: 1fr 1fr;}
+    .form_compra{grid-area: 2 / span 2;}
+    .cuadricula_compra{grid-template-columns: 1fr;}
+    #cuadricula_registro{width: 95%;}
+
+}
+
+@media only screen and (max-width: 600px) {
+    .lateral {grid-area: 1 / span 2;}
+    .cuadricula_izq {grid-area: 2 / span 2;}
+    #usuario_inicio_sesion {grid-area: 1 / span 2; margin: 0px;}
+    #contraseña_inicio_sesion {grid-area: 2 / span 2; margin: 0px;}
+    .botones-reg {width: 100%;}
+    .cuadricula_abajo{grid-template-columns: 1fr;}
+    .cuadricula_abajo aside{margin-left: 20%; margin-right: 20%;}
+    #caducidad {grid-column: 1/3;}
+    #CVV {grid-column: 1/3;}
+    .opciones_compra{grid-column: 1/3;}
+    #cuadricula_registro{width: 95%;}
+    .campos-form{grid-column: 1/3; margin: 5px;}
+    #cerrar_sesion {grid-column: 1/3;}
+    #imagen_perfil {grid-column: 1/3; margin-left: auto; margin-right: auto; margin-bottom: 15px;}
+    #birthday {width: 95%; margin: 5px;}
+}

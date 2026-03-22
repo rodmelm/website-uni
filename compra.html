@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <title>Compra - Mochileros por el mundo</title> <!--Título de la página (aparece en la pestaña del buscador)-->
+        <link rel="stylesheet" href="styles/styles.css"> <!--Documento de CSS que estamos utilizando-->
+        <link rel="icon" type="image/png" href="images/Logosimple.png"> <!--Logo simplificado (aparece en la pestaña del buscador)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Para implementar que la página sea responsive-->
+
+    </head>
+    <body>
+        <!--Cabecera de la página web, título, barra de navegación, logo y selector de idioma-->
+        <header class="cabecera">
+            <p class = "titulo">Mochileros por el mundo</p>
+            <nav>
+                <a href="No_funcional_:D" class="navegacion_cabecera_footer">Inicio</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Experiencias</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Consejos</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Foro</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Contacto</a>
+            </nav>
+            <aside class="elementos_juntos">
+                <img src="images/Mochileroslogo.png" width="70" height="70" alt="Logo mochileros por el mundo">
+            
+                <select class="idioma" name="idioma">
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+                <option value="GE">GE</option>
+                </select>
+            </aside>
+        </header>
+        <!--Cuerpo principal de la página web, dividido en dos bloques, uno de información y un formulario de compra-->
+        <main class="cuadricula_compra">
+            <aside id="cuadricula_info"> <!--Bloque de información incluye imagen del pack y una breve descripción-->
+                    <article class="container">
+                        <h4 id="titulo_viaje"></h4>
+                        <h4 id="descripcion_viaje"></h4>
+                        <h4 id="precio_viaje"></h4>
+                    </article>
+                    <aside class="descripcion">
+                        <p id="parrafo1">
+                        </p>
+                        <p id="parrafo2">
+                        </p>
+                        <p id="parrafo3">
+                        </p>
+                    </aside>
+                </aside>
+
+            <form class="form_compra"> <!--Formulario de compra con diversos campos a rellenar-->
+                <h2>Formulario de compra</h2>
+                <div id="error_compra"></div>
+                <input type="text" id="nombre_compra" name="nombre" class="campos_compra" placeholder="Nombre completo">
+                <input type="email" id="correo_compra" name="nombre" class="campos_compra" placeholder="Correo electrónico">
+                <label for="tarjeta" class="texto_label">Tipo de tarjeta:</label><br>
+                <select name="tarjeta" id="tarjeta">
+                    <option value="">Seleccione tipo de tarjeta</option>
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="American Express">American Express</option>
+                </select>
+                <input type="text" id="num_tarjeta" name="nombre" class="campos_compra" placeholder="Número de tarjeta">
+                <input type="text" id="titular_tarjeta" name="nombre" class="campos_compra" placeholder="Nombre del titular de la tarjeta">
+                <label for="caducidad" class="texto_label">Fecha de caducidad</label><br>
+                <input type="date"  id="caducidad" name="caducidad">
+                <input type="text"  name="CVV"  class="campos" id="CVV" placeholder="Código CVV" >
+                <input type="button" class="opciones_compra" value="Comprar" id="boton_compra">
+                <input type="reset" class="opciones_compra" value="Borrar" id="boton_borrar">
+            </form>
+            
+        </main>
+        <!--Footer de la página web, incluye el aviso de copyright, un bloque de navegación, botones para enlazar redes sociales y un pequeño formulario para la newsletter-->
+        <footer class="fin">
+            <p>@ 2025 Mochileros por el mundo</p>
+            <nav class="navegacion_footer">
+                <a href="No_funcional_:D" class= "navegacion_cabecera_footer">Sobre nosotros</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Política de privacidad</a>
+                <a href="No_funcional_:D" class = "navegacion_cabecera_footer">Ayuda</a>
+            </nav>
+            
+            <aside class="footer_aside">
+
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/instaram.png" width="70" height="70" alt="Icono de instagram"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/tiktok.png" width="70" height="70" alt="Icono de tiktok"></button>
+                <button class="link_social" type="button" onclick="alert('No es funcional :D')"><img src="images/twitter.png" width="70" height="70" alt="Icono de twitter"></button>
+            
+                <form class="newsletter">
+                    <input type="email" class="email" name="email" placeholder="email..">
+
+                    <aside class="botones-newsletter">
+                        <input type="submit" class="newsletter-submit" value="Suscribirse a newsletter">
+                    </aside>
+                    
+
+                </form>
+            </aside>
+        </footer>
+
+        <script src="scripts/compra.js"></script>
+    </body>
+</html>
